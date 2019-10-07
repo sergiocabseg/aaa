@@ -1,0 +1,172 @@
+/*
+04/10/2019
+Sergio Cabredo
+ */
+package m3uf1p03;
+//libraries
+import java.util.Scanner;
+
+public class M3uf1p03 {
+    static Scanner keyboard = new Scanner(System.in);
+      
+    public static void main(String[] args) {
+        keyboard.useDelimiter("\n");
+        
+        //apartado1();
+        //apartado2();
+        //apartado3();
+        //apartado4();
+        //apartado5();
+        //apartado6();
+        //apartado7();
+        //apartado8();
+        //apartado9();
+        apartado10();      
+    }
+    
+    public static void apartado1(){
+        float input1,input2,sum;
+        
+        System.out.print("Input1?: ");
+            input1=keyboard.nextFloat();
+        System.out.print("Input2?: ");
+            input2=keyboard.nextFloat();    
+       
+        sum=input1+input2;
+        System.out.println(input1+" + "+input2+" = "+sum);          
+    }
+    public static void apartado2(){
+        float input1,input2,division;
+        
+        System.out.print("Input1?: ");
+            input1=keyboard.nextFloat();
+        System.out.print("Input2?: ");
+            input2=keyboard.nextFloat();    
+       
+        division=input1/input2;
+        System.out.println(input1+" / "+input2+" = "+division);
+                   
+    }
+    public static void apartado3(){
+        float input1,input2,product;
+        
+        System.out.print("Input1?: ");
+            input1=keyboard.nextFloat();
+        System.out.print("Input2?: ");
+            input2=keyboard.nextFloat();    
+       
+        product=input1*input2;
+        System.out.println(input1+" * "+input2+" = "+product);
+                   }
+    public static void apartado4(){
+        String bin1,bin2;
+        System.out.print("Binary number 1?: ");
+            bin1=keyboard.next();
+        System.out.print("Binary number 2?: ");
+            bin2=keyboard.next();
+        //convert binary to int
+        int num1=Integer.parseInt(bin1,2);
+        int num2=Integer.parseInt(bin2,2);
+        //sum
+        int sum=num1+num2;
+        //convert int to binary
+        String sumbinary=Integer.toBinaryString(sum);
+        System.out.println(num1+" + "+num2+" = "+sumbinary);    
+    }
+    public static void apartado5(){
+        
+        int a=-5+8*6;
+            System.out.println("a= +"+(-5+8*6));
+            System.out.println("a= +"+a);
+        int b=(55+9)%9;
+            System.out.println("b= +"+((55+9)%9));
+            System.out.println("b= +"+b);
+        float c=20+-3*5/8;
+            System.out.println("c= "+(20+-3*5/8));
+            System.out.println("c= "+c);
+        float d=5+15/3*2+8%3;
+            System.out.println("d= "+(5+15/3*2+8%3));
+            System.out.println("d= "+d);        
+    }
+    public static void apartado6(){
+        float number1,number2,sum,mult,sub,div,rem;
+        
+        
+        System.out.print("number1?: ");
+            number1=keyboard.nextFloat();
+        System.out.print("number2?: ");
+            number2=keyboard.nextFloat();
+        
+        sum=number1+number2;
+            System.out.println("sum= "+number1+ " + "+number2+" = "+sum);
+        mult=number1*number2;
+            System.out.println("mult= "+number1+ " * "+number2+" = "+mult);
+        sub=number1-number2;
+            System.out.println("sub= "+number1+ " - "+number2+" = "+sub);
+        div=number1/number2;
+            System.out.println("div= "+number1+ " / "+number2+" = "+div);
+        rem=number1%number2;
+            System.out.println("rem= "+number1+ " % "+number2+" = "+rem);  
+        }
+    public static void apartado7(){
+        int number1,o1,o2,o3,o4,o5,o6,o7,o8,o9,o10;
+        
+        System.out.print("Input a number to know it's multiplication table: ");
+        number1=keyboard.nextInt();
+        o1=number1*1;
+        o2=number1*2;
+        o3=number1*3;
+        o4=number1*4;
+        o5=number1*5;
+        o6=number1*6;
+        o7=number1*7;
+        o8=number1*8;
+        o9=number1*9;
+        o10=number1*10;
+        System.out.println(number1+" * "+1+" = "+o1);
+        System.out.println(number1+" * "+2+" = "+o2);
+        System.out.println(number1+" * "+3+" = "+o3);
+        System.out.println(number1+" * "+4+" = "+o4);
+        System.out.println(number1+" * "+5+" = "+o5);
+        System.out.println(number1+" * "+6+" = "+o6);
+        System.out.println(number1+" * "+7+" = "+o7);
+        System.out.println(number1+" * "+8+" = "+o8);
+        System.out.println(number1+" * "+9+" = "+o9);
+        System.out.println(number1+" * "+10+" = "+o10);
+        }
+    public static void apartado8(){
+        float r,p,a;
+        System.out.print("Input radius of circumference (cm) to know its area and perimeter: ");
+        r=keyboard.nextFloat();
+        p=(float)Math.PI*2*r;
+        a=(float)Math.PI*r*r;
+        System.out.println("perimeter= "+p+ " cm");
+        System.out.println("area= "+a+ " cm^2");
+    }
+    public static void apartado9(){
+        float n1,n2,n3,av;
+        
+        System.out.println("Input 3 numbers to know their average ");
+        System.out.print("number1=  ");
+            n1=keyboard.nextFloat();
+        System.out.print("number2=  ");
+            n2=keyboard.nextFloat();
+        System.out.print("number3=  ");
+            n3=keyboard.nextFloat();
+        
+        av=(n1+n2+n3)/3;
+        System.out.println("the average of "+n1+", "+n2+", "+n3+" is "+av);
+    }   
+    public static void apartado10(){
+        float w,h,a,p;
+        
+        System.out.print("Input width of the rectangle(cm)= ");
+            w=keyboard.nextFloat();
+        System.out.print("Input height of the rectangle(cm)= ");
+            h=keyboard.nextFloat();    
+        a=w*h;
+        p=2*(w+h);
+        System.out.println("Area is "+w+" * "+h+" = "+a);
+        System.out.println("Perimeter is "+"2*("+w+" + "+h+") = "+p);
+    }
+}
